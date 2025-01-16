@@ -8,7 +8,7 @@ function App() {
         Edit <code>src/App.js</code> and save to reload.
       </p>
 
-      <ProductList />
+      <ProductList name="arash malekzadeh" city="yasooj" />
     </div>
   );
 }

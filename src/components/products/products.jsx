@@ -9,7 +9,7 @@ function ProductList({ name, city, listOfProducts }) {
       </h4>
       <ul>
         {listOfProducts.map((item, index) => (
-          <li key={index}>{item}</li>
+          <ProductItem singlProductItem={item} key={index} />
         ))}
       </ul>
     </div>

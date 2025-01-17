@@ -1,4 +1,5 @@
 import "./App.css";
+import Users from "./components/products/components/users/Users";
 import ProductList from "./components/products/products";
 
 const dummyproduct = ["product1", "product2", "product3"];
@@ -9,7 +10,8 @@ function App() {
       <p>
         Edit <code>src/App.js</code> and save to reload.
       </p>
-      <ProductList listOfProducts={dummyproduct} />
+      {/* <ProductList listOfProducts={dummyproduct} /> */}
+      <Users />
     </div>
   );
 }

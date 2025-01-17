@@ -12,12 +12,16 @@ function ProductList({ name, city, listOfProducts }) {
 
   useEffect(() => {
     console.log("runs only once on page load");
+
+    return () => {
+      console.log("component unmounted");
+    };
   }, []);
   const increaseCount = () => {
     setCount(count + 1);
   };
   useEffect(() => {
-    if (count == 10) setChangeStyle(true);
+    if (count === 10) setChangeStyle(true);
   }, [count]);
   return (
     <div>

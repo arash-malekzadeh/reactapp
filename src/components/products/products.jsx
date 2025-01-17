@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import ProductItem from "./components/Product-item";
 
 function ProductList({ name, city, listOfProducts }) {
@@ -6,6 +6,10 @@ function ProductList({ name, city, listOfProducts }) {
   const handletoggleText = () => {
     setFlag(!flag);
   };
+
+  useEffect(() => {
+    console.log("runs only once on page load");
+  }, []);
   return (
     <div>
       <h3> ecommerce project</h3>
